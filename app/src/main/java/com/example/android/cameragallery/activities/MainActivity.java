@@ -37,8 +37,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -290,7 +288,6 @@ public class MainActivity extends AppCompatActivity {
         }
         listOfImagesPath = null;
         listOfImagesPath = RetriveCapturedImagePath();
-        //Log.d("XYZ","inside onActivityResult 13 - listOfImagesPath = " + listOfImagesPath);
         if (listOfImagesPath != null && listOfImagesPath.size() > 0) {
 
             mTextMessage.setVisibility(View.GONE);
